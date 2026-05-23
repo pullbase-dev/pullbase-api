@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"],
+    "paths": {
+      "@pullbase/db": ["./src/lib/db/index.ts"],
+      "@pullbase/db/schema": ["./src/lib/db/schema/index.ts"],
+      "@pullbase/api-zod": ["./src/lib/api-zod/index.ts"],
+      "@pullbase/openai-server": ["./src/lib/openai-server/index.ts"],
+      "@pullbase/openai-server/image": ["./src/lib/openai-server/image/index.ts"],
+      "@pullbase/openai-server/batch": ["./src/lib/openai-server/batch/index.ts"],
+      "@pullbase/openai-server/audio": ["./src/lib/openai-server/audio/index.ts"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
